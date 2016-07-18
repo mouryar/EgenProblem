@@ -6,6 +6,11 @@ import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
 
+/**
+* Alert Data
+* @author  Rajala Mourya
+* @version 1.0
+*/
 @Entity("alert")
 public class Alert {
 	@Id

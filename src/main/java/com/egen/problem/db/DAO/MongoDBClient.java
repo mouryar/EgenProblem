@@ -6,6 +6,11 @@ import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Morphia;
 import com.mongodb.MongoClient;
 
+/**
+* MongoDBClient gives DataStore to perfom CRUD operations
+* @author  Rajala Mourya
+* @version 1.0
+*/
 public final class MongoDBClient {
 	
 	private static Datastore datastore = null;

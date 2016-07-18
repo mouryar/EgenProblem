@@ -10,6 +10,11 @@ import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
 
+/**
+* Incoming Data
+* @author  Rajala Mourya
+* @version 1.0
+*/
 
 @Entity("metrics")
 public class IncomingData {

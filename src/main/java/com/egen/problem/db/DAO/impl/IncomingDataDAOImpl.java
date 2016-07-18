@@ -13,6 +13,12 @@ import com.egen.problem.db.DAO.IncomingDataDAO;
 import com.egen.problem.db.DAO.MongoDBClient;
 import com.egen.problem.ws.model.IncomingData;
 
+/**
+* Implementation class for {@link IncomingDataDAO}
+* @author  Rajala Mourya
+* @version 1.0
+*/
+
 @Named("incomingDataDAO")
 public class IncomingDataDAOImpl implements IncomingDataDAO{
 

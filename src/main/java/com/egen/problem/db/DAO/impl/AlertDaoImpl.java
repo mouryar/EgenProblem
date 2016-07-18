@@ -13,6 +13,11 @@ import com.egen.problem.db.DAO.AlertsDao;
 import com.egen.problem.db.DAO.MongoDBClient;
 import com.egen.problem.ws.model.Alert;
 
+/**
+* Implementation class for {@link AlertDao}
+* @author  Rajala Mourya
+* @version 1.0
+*/
 @Named("alertDao")
 public class AlertDaoImpl implements AlertsDao{
 

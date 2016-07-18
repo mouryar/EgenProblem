@@ -12,8 +12,19 @@ import java.text.ParseException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+/**
+* GLobal Exception Handler
+* @author  Rajala Mourya
+* @version 1.0
+*/
+
 @ControllerAdvice
 public class GlobalExceptionHandler {
+	
+	/**
+	   * Handles UnknownHostException
+	   * @return {@link ResponseEntity}
+	   */
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR) 
     @ExceptionHandler(UnknownHostException.class )
     public ResponseEntity<ExceptionData> handleUnknownHostException() {
@@ -23,6 +34,10 @@ public class GlobalExceptionHandler {
 		return new ResponseEntity<ExceptionData>(data,HttpStatus.INTERNAL_SERVER_ERROR);
     }
 	
+	/**
+	   * Handles Exception
+	   * @return {@link ResponseEntity}
+	   */
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)  
     @ExceptionHandler(Exception.class )
     public ResponseEntity<ExceptionData> handleException() {
@@ -32,6 +47,10 @@ public class GlobalExceptionHandler {
 		return new ResponseEntity<ExceptionData>(data,HttpStatus.INTERNAL_SERVER_ERROR);
     }
 	
+	/**
+	   * Handles ParseException
+	   * @return {@link ResponseEntity}
+	   */
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)  
     @ExceptionHandler(ParseException.class )
     public ResponseEntity<ExceptionData> handleParseException() {
@@ -41,6 +60,10 @@ public class GlobalExceptionHandler {
 		return new ResponseEntity<ExceptionData>(data,HttpStatus.INTERNAL_SERVER_ERROR);
     }
 	
+	/**
+	   * Handles IllegalArgumentException
+	   * @return {@link ResponseEntity}
+	   */
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)  
     @ExceptionHandler(IllegalArgumentException.class )
     public ResponseEntity<ExceptionData> handleIllegalArgumentException() {

@@ -12,6 +12,11 @@ import com.egen.problem.db.DAO.impl.AlertDaoImpl;
 import com.egen.problem.ws.model.Alert;
 import com.egen.problem.ws.model.IncomingData;
 
+/**
+* Rule for Gained Weight
+* @author  Rajala Mourya
+* @version 1.0
+*/
 @Rule(name = "GainedWeightRule")
 public class GainedWeightRule {
 	

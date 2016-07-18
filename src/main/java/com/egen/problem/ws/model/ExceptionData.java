@@ -1,5 +1,10 @@
 package com.egen.problem.ws.model;
 
+/**
+* Exception Data
+* @author  Rajala Mourya
+* @version 1.0
+*/
 public class ExceptionData {
 
 	private boolean exception;
